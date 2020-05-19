@@ -27,7 +27,7 @@ class App extends Component {
   onSubmitHandler(e){
     e.preventDefault();
     const newItem = this.state.currentItem;
-    if(newItem.text!=""){
+    if(newItem.text!==""){
       const newItems = [...this.state.items, newItem]
       this.setState({
         items: newItems,
